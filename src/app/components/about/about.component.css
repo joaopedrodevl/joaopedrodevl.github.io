@@ -1,0 +1,70 @@
+/* Mobile first */
+
+.about {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 0.1rem;
+  margin-top: 1.2rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+
+.about__content__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--tertiary-color);
+}
+
+.about__content__description {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-style: oblique;
+  text-align: start;
+}
+
+.about__content__button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+.about__content__button:hover {
+  background-color: var(--secondary-color);
+}
+
+
+
+.about__content__technologies__title {
+  font-size: 1.4rem;
+  color: var(--tertiary-color);
+}
+
+.about__content__technologies {
+  display: flex;
+}
+
+.about__content__technologies__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.about__content__technologies__list__image {
+  width: 2rem;
+  height: 2rem;
+}

@@ -1,0 +1,18 @@
+<section id="projects">
+  <div class="project__data">
+    <h2 class="projects__title">Projetos</h2>
+    <p class="projects__subtitle">Alguns dos projetos que desenvolvi ou participei</p>
+  </div>
+  <div class="projects">
+    <ul class="projects__list" *ngFor="
+      let project of projects;
+      let i = index;
+    ">
+    <li>
+      <app-projects-list
+        [project]="project"
+      ></app-projects-list>
+    </li>
+    </ul>
+  </div>
+</section>

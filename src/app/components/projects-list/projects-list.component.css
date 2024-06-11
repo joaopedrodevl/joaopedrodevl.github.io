@@ -1,0 +1,68 @@
+section {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Mobile first */
+
+.card {
+  margin: 1rem;
+
+  width: 16rem;
+  background-color: var(--tertiary-color);
+  border-radius: 1rem;
+
+  color: var(--primary-color);
+
+  padding: 1rem;
+
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  text-align: center;
+
+  font-size: 1.5rem;
+}
+
+.card-body {
+  font-style: oblique;
+  text-align: start;
+}
+
+.card-body p {
+  margin-top: 1rem;
+}
+
+.card-body p span {
+  font-weight: bold;
+}
+
+.card-body a span {
+  font-weight: bold;
+}
+
+a:hover{
+  color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+/* Tablet and up */
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 30rem;
+  }
+}
+
+/* Desktop and up */
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 40rem;
+  }
+}

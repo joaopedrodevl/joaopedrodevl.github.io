@@ -1,0 +1,33 @@
+.nav-left {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: #fff;
+  padding: 20px;
+  transition: 0.5s;
+  width: 4rem;
+}
+
+.nav-left__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 1rem;
+}
+
+.fa-icon {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.fa-icon:hover {
+  color: var(--tertiary-color);
+  transition: var(--transition);
+}
+

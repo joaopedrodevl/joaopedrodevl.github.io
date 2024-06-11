@@ -1,0 +1,42 @@
+<!--
+  Nav left component é responsável por exibir o menu lateral da aplicação. Contendo git, linkedin, currículo e contato.
+
+  Deve ser mobile first e responsiva
+-->
+
+<div class="nav-left">
+  <div class="nav-left__content">
+    <!-- Links -->
+    <a
+      href="https://www.linkedin.com/in/joaopedrodevl/"
+      target="_blank"
+      class="nav-left__content__link"
+      title="Linkedin"
+    >
+      <fa-icon [icon]="faLinkedin" class="fa-icon"></fa-icon>
+    </a>
+    <a
+      href="https://github.com/joaopedrodevl"
+      target="_blank"
+      class="nav-left__content__link"
+      title="Github"
+    >
+      <fa-icon [icon]="faGithub" class="fa-icon"></fa-icon>
+    </a>
+    <div class="nav-left__content__link">
+      <a
+        href="assets/curriculo.pdf"
+        target="_blank"
+        class="nav-left__content__link__text"
+        title="Currículo"
+        ><fa-icon [icon]="faFileDownload" class="fa-icon"></fa-icon></a
+      >
+    </div>
+    <div class="nav-left__content__link">
+      <a href="mailto:jpedro.dev@proton.me" class="nav-left__content__link__text"
+        title="Contato"
+        ><fa-icon [icon]="faEnvelope" class="fa-icon"></fa-icon></a
+      >
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-header">
+    <h3>{{project?.name}}</h3>
+  </div>
+  <div class="card-body">
+    <p>
+      {{project?.description}}
+    </p>
+    <p>
+      <span class="tec">Tecnologias:</span> {{project?.technologies}}
+    </p>
+    @if (project?.link) {
+      <a [href]="project?.link" target="_blank"><span>Link para o projeto</span></a><br>
+    } @else {
+      <p><span>Link para o projeto:</span> Não disponível</p>
+    }
+    <a [href]="project?.codeLink" target="_blank"><span>Link para o código fonte</span></a>
+    <p><span>Status:</span> {{project?.status}}</p>
+</div>
