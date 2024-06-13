@@ -4,7 +4,7 @@ section {
 
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--font-card-color);
 }
 
 /* Mobile first */
@@ -16,7 +16,7 @@ a {
   background-color: var(--tertiary-color);
   border-radius: 1rem;
 
-  color: var(--primary-color);
+  color: var(--font-card-color);
 
   padding: 1rem;
 
@@ -47,7 +47,7 @@ a {
 }
 
 a:hover{
-  color: var(--secondary-color);
+  color: var(--font-card-color-hover);
   transition: var(--transition);
 }
 

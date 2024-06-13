@@ -1,7 +1,11 @@
 <header class="header">
   <nav class="nav">
     <a class="nav__logo" href="#home">JPDev</a>
-    <button class="nav__hamburger" [ngClass]="{ 'nav__hamburger--open' : isMenuOpen }" (click)="toggleMenu()">
+    <button
+      class="nav__hamburger"
+      [ngClass]="{ 'nav__hamburger--open': isMenuOpen }"
+      (click)="toggleMenu()"
+    >
       <span></span>
       <span></span>
       <span></span>
@@ -14,10 +18,19 @@
         <a class="nav__link" href="#projects">Projetos</a>
       </li>
       <li class="nav__item">
-        <a class="nav__link" href="mailto:jpedro.dev@proton.me?subject=Contato&body=Interesse em contato agendado.">Contato</a>
+        <a
+          class="nav__link"
+          href="mailto:jpedro.dev@proton.me?subject=Contato&body=Interesse em contato agendado."
+          >Contato</a
+        >
       </li>
       <li class="nav__item">
         <a class="nav__link" href="curriculo.pdf">Currículo</a>
+      </li>
+      <li class="nav__item">
+        <button class="nav__link button__theme" (click)="toggleTheme()" [title]="isDarkTheme ? 'Ir para dia' : 'Ir para noite'">
+          <fa-icon [icon]="isDarkTheme ? faMoon : faSun"></fa-icon>
+        </button>
       </li>
     </ul>
   </nav>

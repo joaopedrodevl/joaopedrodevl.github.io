@@ -17,11 +17,13 @@
 .home__content h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: var(--secondary-color);
 }
 
 .home__content p {
   font-size: 1rem;
   margin-bottom: 1rem;
+  color: var(--secondary-color);
 }
 
 .home__content a {
@@ -38,7 +40,7 @@
 }
 
 .home__content a:hover {
-  background-color: var(--dark-color);
+  background-color: var(--button-color);
 }
 
 .fa-icon-arrow {
