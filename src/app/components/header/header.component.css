@@ -117,6 +117,10 @@ a {
         padding: 0.5rem 0;
     }
 
+    .button__theme {
+        width: 100%;
+    }
+
     .nav__link::after {
         content: '';
         display: block;
